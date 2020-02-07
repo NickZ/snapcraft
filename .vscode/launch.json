@@ -2,18 +2,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "run snapcraft on subtitle-edit-snap",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "justMyCode": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "C:\\Users\\nick\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\snapcraft-script.py",
+            "cwd": "C:\\Users\\nick\\source\\repos\\subtitle-edit-snap",
+        },
+        {
             "name": "Python",
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
+            "justMyCode": false,
+            "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
-            "cwd": "${workspaceRoot}",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
+            "cwd": "C:\\Users\\nick\\source\\repos\\subtitle-edit-snap",
         },
         {
             "name": "Unit Test",
