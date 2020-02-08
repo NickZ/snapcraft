@@ -60,7 +60,7 @@ def _get_data_from_snap_file(snap_path):
                     os.path.join(temp_dir, "squashfs-root"),
                     snap_path,
                     "-e",
-                    os.path.join("meta", "snap.yaml"),
+                    "meta/snap.yaml",
                 ]
             )
         except subprocess.CalledProcessError:
