@@ -2,6 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "run snapcraft on subtitle-edit-snap",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "justMyCode": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "C:\\Users\\nick\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\snapcraft-script.py",
+            "cwd": "C:\\Users\\nick\\source\\repos\\subtitleedit",
+        },
+        {
+            "name": "push snap",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "justMyCode": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "C:\\Users\\nick\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\snapcraft-script.py",
+            "args": ["push","--release","edge","subtitle-edit_3.5.13-4_amd64.snap"],
+            "cwd": "C:\\Users\\nick\\source\\repos\\subtitleedit",
+        },
+        {
             "name": "Python",
             "type": "python",
             "request": "launch",
